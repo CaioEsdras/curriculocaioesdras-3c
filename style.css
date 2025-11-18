@@ -1,0 +1,98 @@
+/* ======== ESTILO BASE DO SITE ======== */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* ======== CONTAINER PRINCIPAL ======== */
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,.1);
+    border-radius: 10px;
+
+    /* borda verde */
+    border: 3px solid #2e7d32; 
+}
+
+/* ======== CABEÇALHO ======== */
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #2e7d32; /* borda verde */
+}
+
+.header h1 {
+    margin: 15px 0 5px;
+    color: #2e7d32; /* verde */
+}
+
+.header p {
+    margin: 2px 0;
+    color: #555;
+}
+
+/* ======== TÍTULOS ======== */
+h2 {
+    color: #2e7d32; /* verde */
+    border-bottom: 2px solid #2e7d32; /* linha verde */
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+/* ======== TEXTO ======== */
+p,
+li {
+    text-align: justify;
+    line-height: 1.6;
+}
+
+/* ======== LISTAS ======== */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li::before {
+    content: "• ";
+    color: #2e7d32; /* verde */
+    font-weight: bold;
+}
+
+/* ======== BOTÃO ======== */
+.button{
+  display: flex;
+  justify-content: flex-end;
+}
+
+#btn-print{
+  background-color: #2e7d32; /* verde */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+#btn-print:hover{
+  background-color: #1b5e20; /* verde mais escuro */
+}
+
+/* ======== IMPRESSÃO ======== */
+@media print{
+  #btn-print{
+    display: none;
+  }
+}
